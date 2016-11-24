@@ -1,16 +1,14 @@
 var fs = require('fs');
 
-var auth = require('../../slackCREDENTIALS').xoxb; /**!! CHANGE THIS TO ~/.credentials file !!**/
+var USER_DIR = (process.env.HOME || process.env.HOMEPATH ||
+    process.env.USERPROFILE) + '/.credentials/';
+var USER_ID_PATH = USER_DIR + 'user_ids.json';
+var auth = require(USER_DIR + 'slackCREDS').xoxb;
 
 var WebClient = require('@slack/client').WebClient;
 var web = new WebClient(auth);
 
 var debug = require('./debug').debug;
-
-var USER_DIR = (process.env.HOME || process.env.HOMEPATH ||
-    process.env.USERPROFILE) + '/.credentials/';
-var USER_ID_PATH = USER_DIR + 'user_ids.json';
-
 
 /**
  * createUserList()
@@ -34,18 +32,13 @@ function createUserList() {
 
         fs.writeFile(USER_ID_PATH, JSON.stringify(info), (err) => {
             if (err) {
-                console.log('start.js: nameById: ' + err)
+                console.log('start.js:error writing user list: ' + err)
             }
 
+            debug.log('User list created at ' + USER_ID_PATH);
         })
 
-        info.members.forEach((user) => { // for each user, add id as key and name as value to USER_ID_PATH
 
-            nameById[user.id] = user.name; /** !! THIS IS NOT BEING USED ANYWHERE !! **/
-
-        }) // eof info.members.forEach
-
-    debug.log('User list created at ' + USER_ID_PATH);
 
     }); // eof web.users.list
 

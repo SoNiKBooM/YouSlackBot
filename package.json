@@ -1,6 +1,6 @@
 {
 "name": "YouSlackBot",
-"version": "2.0.1",
+"version": "1.0.0",
 "description": "Insert Youtube videos posted to Slack into a Youtube playlist.",
 "main": "start.js",
 "dependencies": {

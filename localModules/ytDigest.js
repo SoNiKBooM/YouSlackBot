@@ -37,7 +37,7 @@ module.exports = function(message) {
 
         id =  parsedUrl[2];  //The youtube id is in the third array -see above
 
-        debug.log('ytDigest:youtubeInsert:', nameId + ': ' + message.text);  //Logs all messages to the console with user name and message text
+        debug.log('ytDigest:youtubeInsert:', getName(nameId) + ': ' + message.text);  //Logs all messages to the console with user name and message text
 
         fs.writeFile(VIDEO_ID_PATH, JSON.stringify(id), function(error) {  //write the parsed video ID to VIDEO_ID_PATH
             if (error) throw error;

@@ -1,0 +1,11 @@
+//YET TO ADD
+https://www.npmjs.com/package/@slack/client
+fs (? does this need to be added? -or is it core?)
+readline
+googleapis
+google-auth-library
+
+{
+"name": "application-name",
+"version": "0.0.1"
+}

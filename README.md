@@ -4,7 +4,15 @@ A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a 
 
 ## Getting Started
 
-As this is still a work in progress, this package has NOT been published on npm yet. However, if you would like to test it, please clone the master repo. Feedback is always welcome. Enjoy! :)
+As this is still a work in progress, this package has NOT been published on npm yet.
+  
+If you would like to test it, please clone the master repo.
+
+For contributions, please see [Contributing](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/README.md#contributing) section below.
+
+Feedback is always welcome. 
+  
+  Enjoy! :)
 
 ### Prerequisites
   * [nodeJS](https://nodejs.org/en/download/package-manager/)

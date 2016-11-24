@@ -8,8 +8,8 @@ var SCOPES = ['https://www.googleapis.com/auth/youtube'];
 
 var CREDS_DIR = (process.env.HOME || process.env.HOMEPATH ||
     process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_PATH = CREDS_DIR + 'google_token.json';
-var VIDEO_ID_PATH = CREDS_DIR + 'video_id.json';
+var TOKEN_PATH = CREDS_DIR + '_google_token.json';
+var VIDEO_ID_PATH = CREDS_DIR + '_video_id.json';
 var PLAYLIST_PATH = CREDS_DIR + 'playlistID.json';
 var YT_CREDS = CREDS_DIR +  'youtubeCREDS.json';
 

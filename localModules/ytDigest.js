@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var VIDEO_DIR = (process.env.HOME || process.env.HOMEPATH ||
     process.env.USERPROFILE) + '/.credentials/';
-var VIDEO_ID_PATH = VIDEO_DIR + 'video_id.json';
+var VIDEO_ID_PATH = VIDEO_DIR + '_video_id.json';
 
 var purgeCache = require('./purgeCache');
 var debug = require('./debug').debug;

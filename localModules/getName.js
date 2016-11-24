@@ -1,6 +1,6 @@
 var USER_DIR = (process.env.HOME || process.env.HOMEPATH ||
     process.env.USERPROFILE) + '/.credentials/';
-var USER_ID_PATH = USER_DIR + 'user_ids.json';
+var USER_ID_PATH = USER_DIR + '_user_ids.json';
 
 
 /**

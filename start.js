@@ -7,7 +7,9 @@ var debug = require('./localModules/debug').debug;
 var createUserList = require('./localModules/userList').createUserList;
 var getName = require('./localModules/getName').getName;
 
-var auth = require('../slackCREDENTIALS').xoxb; /** !! this will need to be changed to ~/.credentials !! */
+var USER_DIR = (process.env.HOME || process.env.HOMEPATH ||
+    process.env.USERPROFILE) + '/.credentials/';
+var auth = require(USER_DIR + 'slackCREDS').xoxb;
 
 var rtm = new RtmClient(auth);
 

@@ -1,54 +1,78 @@
-# YouSlackBot (work in progress)
-------
+# YouSlackBot
 
-#### A nodeJS Slack Bot that inserts Youtube videos posted to a Slack channel to a Youtube playlist. 
-------
+A nodeJS Slack Bot that inserts Youtube videos posted to a Slack channel into a Youtube playlist.
 
-##### Requires:
-  * nodeJS
-  * npm
+## Getting Started
 
-##### Packages.json:
-  * @slack/client
+!! NOT YET ADDED TO NPM !!
+
+### Prerequisites
+  * [nodeJS](https://nodejs.org/en/download/package-manager/)
+  * [npm](https://docs.npmjs.com/cli/install)
+
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
 
 
-#### Credentials:
-###### /~slackCREDENTIALS.json (xobx Bot integration key)
-###### /~ytCREDENTIALS.json (oauth2 json)
+## Contributing
 
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-#### API's used:
-###### Slack
-###### YouTube (yet to implement)
+## Versioning
 
-------
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-### TOP NOTES
+## Authors
 
-* start.js is started with **node start.js** in it's dir
-* start.js runs modules -**node**JS der!
+* **Timothy Dell** - *Initial work* - [SoNiKBooM](https://github.com/SoNiKBooM)
 
-------
+## License
 
-### MODULES:
+This project is still yet to be licensed.
 
-#### ytDigest
-* A module function that accepts a full url as ytLink:
-    * If not youtube link, throws console error for debugging currently - //does nothing;
-    * If youtube link:
-        * strips video ID
-        * writes ID to local JSON file in home dir for youtube.js module
-        * runs youtube.js
-        * purges youtube.js module cache (to run again on link activation)
+## Acknowledgments
 
-#### youtube
-* Module for oauth2 to google/youtube and uploading.
-    * __LOTS of crap to auth__ -_- (UPDATE THIS!!)
-    * uploads video id with gapi playlistItems.insert (needs more!!)
-
-#### purgeCache
-##### CREDIT: http://stackoverflow.com/a/14801711/6740845
-* searches for modules and purges it (useful for running the same module on detection and pulling from a json)
-
-
-
+* Google 
+* Slack
+* StackOverflow

@@ -19,7 +19,7 @@ As this is still a work in progress, this package has NOT been published on npm 
  The ~/.credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
   To start we will require three separate files, these are:
   
-  * *slackCREDS.json* - This contains the slack API key. eg;
+  * **slackCREDS.json** - This contains the slack API key. eg;
 ```
 module.exports =
 {
@@ -27,7 +27,7 @@ xoxb: 'YOUR-KEY-HERE'
 }
 ```
   
-  * *youtubeCREDS.json* - This is the JSON file that can be downloaded from within the Google Developer Console. It looks similar to the example below but with YOUR-X-X properties replaced with your own API properties.
+  * **youtubeCREDS.json** - This is the JSON file that can be downloaded from within the Google Developer Console. It looks similar to the example below but with YOUR-X-X properties replaced with your own API properties.
 ```
 {
 "installed":
@@ -44,7 +44,7 @@ xoxb: 'YOUR-KEY-HERE'
 
 ```
   
-  * *playlistID.json* This just contains a simple string with your chosen playlist ID. For example, if the YouTube playlist url is *https://www.youtube.com/playlist?list=PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6* the file should look like this:
+  * **playlistID.json** This just contains a simple string with your chosen playlist ID. For example, if the YouTube playlist url is *https://www.youtube.com/playlist?list=PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6* the file should look like this:
   
 ```
 "PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6"
@@ -52,56 +52,33 @@ xoxb: 'YOUR-KEY-HERE'
 
 ### Installing
 
-This is a step by step guide on installing YouSlackBot. Please make sure you have all prerequisites above.
+This is a step by step guide on installing YouSlackBot. Please make sure you have all prerequisites above and the required files in ~/.credentials as above.
 
-Install YouSlackBot with npm:
+Install YouSlackBot with npm
 
 ```
 $ npm install YouSlackBot
 ```
 
-And repeat
+Start the bot with node.
 
 ```
-until finished
+# node YouSlackBot/start.js
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+    
+Invite YouSlackBot to the Slack Channel you want it to watch.
+Example, inside the desired channel type:
 ```
-Give an example
+/invite YOUR-BOT-NAME
 ```
+  
+You should see that the bot is now online in Slack.
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
+**IMPORTANT:** On the first YouTube API request, you will be prompted to visit a URL from google to receive the API key. This prompt is in console and will **not** work without entering the returned key. You can initiate this by posting a valid YouYube video URL into the slack Channel and going back to the console. This only needs to be done once.  
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Please read [CONTRIBUTING.md](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/CONTRIBUTING.md) for details on my code of conduct, and the process for submitting pull requests to me.
 
 ## Authors
 

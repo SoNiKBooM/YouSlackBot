@@ -14,9 +14,9 @@ A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a 
   * [Google oAuth2 key](https://console.developers.google.com) with [YouTube Data API v3](https://developers.google.com/youTube/v3/) scope.
   * YouTube playlist ID
 
-### ~./credentials Directory
+### ~/.credentials Directory
  
- The ~./credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
+ The ~/.credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
   To start we will require three separate files, these are:
   * *slackCREDS.json* - This contains the slack API key. eg;
 ```

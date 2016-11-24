@@ -6,7 +6,7 @@ A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a 
 
 [Installation](https://github.com/SoNiKBooM/YouSlackBot#installing)
 
-For contributions, please see [Contributing](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/README.md#contributing) section below.
+For contributions, please see [Contributing](#contributing) section below.
 
 Feedback is always welcome. 
   

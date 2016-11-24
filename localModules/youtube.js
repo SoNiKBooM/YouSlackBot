@@ -8,10 +8,10 @@ var SCOPES = ['https://www.googleapis.com/auth/youtube'];
 
 var CREDS_DIR = (process.env.HOME || process.env.HOMEPATH ||
     process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_PATH = CREDS_DIR + 'nodejs-google-token.json';
-var YT_CREDS = CREDS_DIR +  'youtubeCredentials.json';
+var TOKEN_PATH = CREDS_DIR + 'google_token.json';
 var VIDEO_ID_PATH = CREDS_DIR + 'video_id.json';
 var PLAYLIST_PATH = CREDS_DIR + 'playlistID.json';
+var YT_CREDS = CREDS_DIR +  'youtubeCREDS.json';
 
 var purgeCache = require('./purgeCache');
 var debug = require('./debug').debug;
@@ -28,7 +28,7 @@ var credentials = JSON.stringify(YT_CREDS);
  ** @param err
  ** @param content
  */
-fs.readFile('/home/sonikboom/.credentials/youtubeCredentials.json', function processClientSecrets(err, content) { /** !! FILE LOCATION NEEDS TO BE A STRING FOR SOME REASON - NEED TO FIX SOMEHOW !! **/
+fs.readFile(YT_CREDS, function processClientSecrets(err, content) {
 
     if (err) {
         console.log('Error loading client secret file: ' + err);

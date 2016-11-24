@@ -94,7 +94,7 @@ Please read [CONTRIBUTING.md](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/
 
 ## License
 
-This project is still yet to be licensed.
+This project is licensed under the MIT License - see the [LICENSE.MD](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/LICENSE.MD) file for details
 
 ## Acknowledgments
 

@@ -71,7 +71,7 @@ $ npm install YouSlackBot
 Start the bot with node.
 
 ```
-# node YouSlackBot/start.js
+$ sudo node node_modules/YouSlackBot/start.js
 ```
     
 Invite YouSlackBot to the Slack Channel you want it to watch.

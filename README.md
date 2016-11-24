@@ -25,7 +25,8 @@ Feedback is always welcome.
 ### The ~/.credentials Directory
  
  The ~/.credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
-  To start we will require three separate files, these are:
+  
+To start the bot we will first require three separate files added to the ~/.credentials directory by the user, these are:
   
   * **slackCREDS.json** - This contains the slack API key. eg;
 ```

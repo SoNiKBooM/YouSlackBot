@@ -1,6 +1,6 @@
 # YouSlackBot
 
-A nodeJS Slack Bot that inserts Youtube videos posted to a Slack channel into a Youtube playlist.
+A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a YouTube playlist.
 
 ## Getting Started
 
@@ -9,15 +9,54 @@ A nodeJS Slack Bot that inserts Youtube videos posted to a Slack channel into a 
 ### Prerequisites
   * [nodeJS](https://nodejs.org/en/download/package-manager/)
   * [npm](https://docs.npmjs.com/cli/install)
+  * [Slack Bot User](https://my.slack.com/services/new/bot) with [API Token](https://api.slack.com/tokens)
+  * [Google Account](https://accounts.google.com/SignUp?hl=en)
+  * [Google oAuth2 key](https://console.developers.google.com) with [YouTube Data API v3](https://developers.google.com/youTube/v3/) scope.
+  * YouTube playlist ID
+
+### ~./credentials Directory
+ 
+ The ~./credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
+  To start we will require three separate files, these are:
+  * *slackCREDS.json* - This contains the slack API key. eg;
+```
+module.exports =
+{
+xoxb: 'YOUR-KEY-HERE' 
+}
+```
+
+  * *youtubeCREDS.json* - This is the JSON file that can be downloaded from within the Google Developer Console. It looks similar to the example below but with YOUR-X-X properties replaced with your own API properties.
+```
+{
+"installed":
+        {
+        "client_id":"YOUR-CLIENT-ID",
+        "project_id":"YOUR-PROJECT-ID",
+        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret":"YOUR-CLIENT-SECRET",
+        "redirect_uris":[YOUR-REDIRECT-URIS]
+        }
+}
+
+```
+
+  * *playlistID.json* This just contains a simple string with your chosen playlist ID. For example, if the YouTube playlist url is *https://www.youtube.com/playlist?list=PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6* the file should look like this:
+  
+```
+"PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6"
+```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+This is a step by step guide on installing YouSlackBot. Please make sure you have all prerequisites above.
 
-Say what the step will be
+Install YouSlackBot with npm:
 
 ```
-Give the example
+$ npm install YouSlackBot
 ```
 
 And repeat

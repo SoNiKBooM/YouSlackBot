@@ -4,7 +4,7 @@ A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a 
 
 ## Getting Started
 
-!! NOT YET ADDED TO NPM !!
+As this is still a work in progress, this package has NOT been published on npm yet. However, if you would like to test it, please clone the master repo. Feedback is always welcome. Enjoy! :)
 
 ### Prerequisites
   * [nodeJS](https://nodejs.org/en/download/package-manager/)
@@ -14,10 +14,11 @@ A nodeJS Slack Bot that inserts YouTube videos posted to a Slack channel into a 
   * [Google oAuth2 key](https://console.developers.google.com) with [YouTube Data API v3](https://developers.google.com/youTube/v3/) scope.
   * YouTube playlist ID
 
-### ~/.credentials Directory
+### The ~/.credentials Directory
  
  The ~/.credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
   To start we will require three separate files, these are:
+  
   * *slackCREDS.json* - This contains the slack API key. eg;
 ```
 module.exports =
@@ -25,7 +26,7 @@ module.exports =
 xoxb: 'YOUR-KEY-HERE' 
 }
 ```
-
+  
   * *youtubeCREDS.json* - This is the JSON file that can be downloaded from within the Google Developer Console. It looks similar to the example below but with YOUR-X-X properties replaced with your own API properties.
 ```
 {
@@ -42,7 +43,7 @@ xoxb: 'YOUR-KEY-HERE'
 }
 
 ```
-
+  
   * *playlistID.json* This just contains a simple string with your chosen playlist ID. For example, if the YouTube playlist url is *https://www.youtube.com/playlist?list=PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6* the file should look like this:
   
 ```

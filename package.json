@@ -1,11 +1,21 @@
-//YET TO ADD
-https://www.npmjs.com/package/@slack/client
-fs (? does this need to be added? -or is it core?)
-readline
-googleapis
-google-auth-library
-
 {
-"name": "application-name",
-"version": "0.0.1"
+"name": "YouSlackBot",
+"version": "2.0.1",
+"description": "Insert Youtube videos posted to Slack into a Youtube playlist.",
+"main": "start.js",
+"dependencies": {
+"@slack/client": "^3.6.1",
+"gapi": "0.0.3",
+"googleapis": "^14.2.0",
+"google-auth-library": "^0.9.10",
+"readline": "^1.3.0",
+"youtube-api": "^2.0.4"
+},
+"devDependencies": {},
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "SoNiKBooM",
+"license": "!! FIND LICENSE !!"
 }
+

@@ -15,8 +15,7 @@ Feedback is always welcome.
   Enjoy! :)
 
 ### Prerequisites
-  * [nodeJS](https://nodejs.org/en/download/package-manager/)
-  * [npm](https://docs.npmjs.com/cli/install)
+  * [nodeJS and npm](https://docs.npmjs.com/getting-started/installing-node)
   * [Slack Bot User](https://my.slack.com/services/new/bot) with [API Token](https://api.slack.com/tokens)
   * [Google Account](https://accounts.google.com/SignUp?hl=en)
   * [Google oAuth2 key](https://console.developers.google.com) with [YouTube Data API v3](https://developers.google.com/youTube/v3/) scope.
@@ -24,7 +23,7 @@ Feedback is always welcome.
 
 ### The ~/.credentials Directory
  
- The ~/.credentials directory is the working directory of YouSlackBot. All bot created files have an underscore prefix.
+ The ~/.credentials directory is the working directory of YouSlackBot. There are two types of files kept here, user files and bot files. All bot created files have an underscore prefix.
   
 To start the bot we will first require three separate files added to the ~/.credentials directory by the user, these are:
   

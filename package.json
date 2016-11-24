@@ -16,6 +16,6 @@
 "test": "echo \"Error: no test specified\" && exit 1"
 },
 "author": "SoNiKBooM",
-"license": "!! FIND LICENSE !!"
+"license": "MIT"
 }
 

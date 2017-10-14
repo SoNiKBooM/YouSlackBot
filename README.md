@@ -90,6 +90,12 @@ Please read [CONTRIBUTING.md](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/
 
 * **Timothy Dell** - *Initial work* - [SoNiKBooM](https://github.com/SoNiKBooM)
 
+## Donate
+
+**BTC** 1Q19q6M39DjZkxM9ogW8ZSfGQKQzFX1TSN
+
+**ETH** 0xFeb6b03e0AD538B87B762f86b79e9bf1Df538054
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.MD](https://github.com/SoNiKBooM/YouSlackBot/blob/dev/LICENSE.MD) file for details
